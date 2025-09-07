@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Santiago Samora - Sobrevivência Urbana</title>
   <link rel="stylesheet" href="assets/css/bio.css">
+  <link rel="stylesheet" href="assets/css/galeria.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/bordoes.css">
 </head>
 <body>
   <div class="intro">
@@ -49,14 +52,31 @@
 
 
   <section class="bordoes">
-    <h2>Bordões Icônicos</h2>
-    <ul>
-      <li>“Calma aí que eu esqueci o que eu ia esquecer!”</li>
-      <li>“Foco é pra quem não tem talento!”</li>
-      <li>“Tenente aprovou, então tá certo!”</li>
-      <li>“Se der ruim, finge que é treinamento!”</li>
-    </ul>
-  </section>
+  <h2>Bordões Icônicos</h2>
+  <div class="bordao-grid">
+    <div class="bordao-card">
+      <img src="assets/img/calma ai que eu esqueci.png" alt="Cérebro">
+      <p>“Calma aí que eu esqueci o que eu ia esquecer!”</p>
+      <button onclick="playSound('esqueci')">🔊 Ouvir</button>
+    </div>
+    <div class="bordao-card">
+      <img src="assets/img/foco.png" alt="Alvo">
+      <p>“Foco é pra quem não tem talento!”</p>
+      <button onclick="playSound('foco')">🔊 Ouvir</button>
+    </div>
+    <div class="bordao-card">
+      <img src="assets/img/tenente.png" alt="Tenente">
+      <p>“Tenente aprovou, então tá certo!”</p>
+      <button onclick="playSound('tenente')">🔊 Ouvir</button>
+    </div>
+    <div class="bordao-card">
+      <img src="assets/img/deu ruim.png" alt="Explosão">
+      <p>“Se der ruim, finge que é treinamento!”</p>
+      <button onclick="playSound('treinamento')">🔊 Ouvir</button>
+    </div>
+  </div>
+</section>
+
 
     <footer>
         <p>&copy; 2025 Santiago Samora RP. Todos os direitos reservados.<br>
@@ -65,6 +85,8 @@
 
 
 
-  <script src="script.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/audio.js"></script>
+
 </body>
 </html>

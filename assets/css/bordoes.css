@@ -1,0 +1,98 @@
+.bordoes {
+  padding: 60px 20px;
+  background-color: #0e0e0e;
+  color: #fff;
+}
+
+.bordoes h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.bordao-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.bordao-card {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,255,255,0.2);
+  transition: transform 0.3s ease;
+}
+
+.bordao-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0,255,255,0.4);
+}
+
+.bordao-card img {
+  width: 100%;
+  max-width: 220px; /* aumenta o limite de largura */
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,255,255,0.3);
+  transition: transform 0.3s ease;
+}
+
+
+.bordao-card p {
+  font-size: 1.1em;
+  font-style: italic;
+  color: #00ffff;
+}
+
+
+
+.bordao-card {
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,255,255,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.bordao-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(0,255,255,0.5);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/*Audio Bordoes*/
+
+.bordao-card button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #00ffff;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bordao-card button:hover {
+  background-color: #ff00ff;
+  color: #fff;
+}
