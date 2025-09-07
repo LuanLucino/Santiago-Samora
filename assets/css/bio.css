@@ -13,30 +13,18 @@
 }
 
 .biografia-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  align-items: flex-start;
-  justify-content: center;
   max-width: 1000px;
   margin: 0 auto;
   background-color: #1f1f1f;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0,255,255,0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-.biografia-imagem img {
-  max-width: 300px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,255,255,0.3);
-}
-
-.biografia-texto {
-  flex: 1;
-  min-width: 300px;
-}
-
+/* Texto geral */
 .biografia-texto p {
   font-size: 1.1em;
   line-height: 1.6;
@@ -48,5 +36,115 @@
   margin-top: 30px;
   margin-bottom: 15px;
   color: #00ffff;
+}
+
+/* Bloco 1: Identidade + imagem à direita */
+.biografia-bloco-identidade {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Centraliza verticalmente */
+  gap: 30px;
+}
+
+.biografia-bloco-identidade .biografia-texto {
+  flex: 1;
+}
+
+.biografia-bloco-identidade .biografia-imagem {
+  max-width: 300px;
+}
+
+.biografia-bloco-identidade .biografia-imagem img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,255,255,0.3);
+}
+
+/* Bloco 2: Histórico Militar + imagem à esquerda */
+.biografia-bloco-historico {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Centraliza verticalmente */
+  gap: 30px;
+  flex-direction: row-reverse;
+}
+
+.biografia-bloco-historico .biografia-texto {
+  flex: 1;
+}
+
+.biografia-bloco-historico .biografia-imagem {
+  max-width: 300px;
+}
+
+.biografia-bloco-historico .biografia-imagem img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,255,255,0.3);
+}
+
+/* Bloco 3: Vida Civil + imagem à esquerda */
+.biografia-bloco-civil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Centraliza verticalmente */
+  gap: 30px;
+}
+
+.biografia-bloco-civil .biografia-texto {
+  flex: 1;
+}
+
+.biografia-bloco-civil .biografia-imagem {
+  max-width: 300px;
+}
+
+.biografia-bloco-civil .biografia-imagem img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,255,255,0.3);
+}
+
+
+.biografia-imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,255,255,0.3);
+}
+
+
+@media (max-width: 768px) {
+  .biografia-container {
+    padding: 20px;
+  }
+
+  .biografia-bloco-identidade,
+  .biografia-bloco-historico,
+  .biografia-bloco-civil {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .biografia-texto {
+    width: 100%;
+  }
+
+  .biografia-imagem {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .biografia-imagem img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,255,255,0.3);
+  }
+
+  .biografia-texto h3 {
+    margin-top: 40px;
+  }
 }
 
