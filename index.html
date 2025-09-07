@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Santiago Samora - Sobrevivência Urbana</title>
-  
+
     <link rel="stylesheet" href="assets/css/sections/bio.css">
     <link rel="stylesheet" href="assets/css/sections/galeria.css">
     <link rel="stylesheet" href="assets/css/sections/footer.css">
@@ -16,6 +16,10 @@
 
 </head>
 <body>
+
+    <div id="tsparticles"></div>
+
+
   <div class="intro">
   <h1>Bem-vindo à Tropa Samora</h1>
   <p>Conheça Santiago Samora, o ex-militar mais imprevisível do RP. Aqui você encontra sua ficha, bordões, missões e momentos épicos — tudo com estilo e caos controlado.</p>
@@ -106,25 +110,26 @@
     <div class="bordao-card">
       <img src="assets/img/esqueci.png" alt="Cérebro">
       <p>“Calma aí que eu esqueci o que eu ia esquecer!”</p>
-      <button onclick="playSound('esqueci')">🔊 Ouvir</button>
+      <button class="btn" onclick="playSound('esqueci')">🔊 Ouvir</button>
     </div>
     <div class="bordao-card">
       <img src="assets/img/foco.png" alt="Alvo">
       <p>“Foco é pra quem não tem talento!”</p>
-      <button onclick="playSound('foco')">🔊 Ouvir</button>
+      <button class="btn" onclick="playSound('foco')">🔊 Ouvir</button>
     </div>
     <div class="bordao-card">
       <img src="assets/img/tenente.png" alt="Tenente">
       <p>“Tenente aprovou, então tá certo!”</p>
-      <button onclick="playSound('tenente')">🔊 Ouvir</button>
+      <button class="btn" onclick="playSound('tenente')">🔊 Ouvir</button>
     </div>
     <div class="bordao-card">
       <img src="assets/img/explosao.png" alt="Explosão">
       <p>“Se der ruim, finge que é treinamento!”</p>
-      <button onclick="playSound('treinamento')">🔊 Ouvir</button>
+      <button class="btn" onclick="playSound('treinamento')">🔊 Ouvir</button>
     </div>
   </div>
 </section>
+
 
 
     <footer>
