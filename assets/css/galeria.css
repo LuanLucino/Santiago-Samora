@@ -1,0 +1,51 @@
+.galeria {
+  padding: 60px 20px;
+  background-color: #111;
+  color: #fff;
+}
+
+.galeria h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.missao-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.missao-card {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,255,255,0.2);
+  transition: transform 0.3s ease;
+}
+
+.missao-card:hover {
+  transform: scale(1.05);
+}
+
+.missao-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.missao-info {
+  padding: 20px;
+}
+
+.missao-info h3 {
+  margin-top: 0;
+  font-size: 1.4em;
+  color: #00ffff;
+}
+
+.missao-info p {
+  font-size: 1em;
+  line-height: 1.5;
+}
