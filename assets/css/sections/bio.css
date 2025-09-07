@@ -148,3 +148,71 @@
   }
 }
 
+
+
+.biografia-texto {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.biografia-texto p {
+  margin-bottom: 12px;
+}
+
+.biografia-texto strong {
+  color: #00ffff;
+}
+
+.biografia-texto em {
+  color: #ccc;
+  font-size: 0.9em;
+}
+
+.destaque {
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.caos {
+  color: #ff4444;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(255, 68, 68, 0.5);
+}
+
+
+
+.biografia {
+  position: relative;
+  overflow: visible;
+}
+
+/* Animação de alerta */
+@keyframes piscarConfidencial {
+  0%, 100% {
+    background-color: rgba(255, 0, 0, 0.85);
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+  }
+  50% {
+    background-color: rgba(255, 0, 0, 0.4);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+  }
+}
+
+/* Selo animado */
+.biografia::before {
+  content: "CONFIDENCIAL";
+  position: absolute;
+  top: 20px;
+  right: 3px;
+  transform: rotate(8deg);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 6px 16px;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  text-shadow: 1px 1px 2px #000;
+  z-index: 10;
+  animation: piscarConfidencial 1.5s infinite;
+}

@@ -19,3 +19,73 @@
   max-width: 700px;
   margin: 0 auto;
 }
+
+/* Espaçamento entre sections */
+section {
+  margin: 80px auto;
+  padding: 0 20px;
+  border-radius: 12px;
+  overflow: hidden; /* Garante que conteúdo respeite o arredondamento */
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+}
+
+
+/* Limite de largura e centralização */
+section,
+header,
+footer {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+  section {
+    margin: 60px auto;
+    padding: 0 15px;
+  }
+}
+
+/* Margem superior menor só na ficha do personagem */
+/* 🔷 Margem superior menor para a ficha */
+.biografia {
+  margin-top: -2px;
+  padding: 40px 20px;
+  border-radius: 0px 0px 12px 12px;
+  background-color: #1f1f1f;
+  box-shadow: 0 0 10px rgba(0,255,255,0.1);
+}
+
+/* 🔷 Bordas arredondadas e espaçamento lateral para todas as sections */
+section {
+  border-radius: 12px;
+  padding: 60px 30px;
+  margin: 80px auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+/* 🔷 Ajuste para telas menores */
+@media (max-width: 768px) {
+  section {
+    padding: 40px 20px;
+    margin: 60px auto;
+  }
+
+  .biografia {
+    padding: 30px 15px;
+  }
+}
+
+.biografia {
+  background: linear-gradient(135deg, #1f1f1f, #2a2a2a);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
