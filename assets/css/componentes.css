@@ -1,0 +1,23 @@
+/* componentes.css */
+.btn {
+  background-color: #00ffff;
+  color: #0e0e0e;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #00cccc;
+}
+
+.card {
+  background-color: #1f1f1f;
+  border: 1px solid #00ffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,255,255,0.2);
+}

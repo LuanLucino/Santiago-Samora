@@ -1,0 +1,21 @@
+/* layout.css */
+.intro {
+  background: linear-gradient(to bottom right, #0e0e0e, #1a1a1a);
+  padding: 80px 20px;
+  text-align: center;
+  border-bottom: 2px solid #00ffff;
+}
+
+.intro h1 {
+  font-size: 3em;
+  color: #00ffff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(0,255,255,0.5);
+}
+
+.intro p {
+  font-size: 1.2em;
+  color: #ccc;
+  max-width: 700px;
+  margin: 0 auto;
+}
