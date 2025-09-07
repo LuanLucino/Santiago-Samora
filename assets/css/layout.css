@@ -37,6 +37,7 @@ footer {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 12px;
 }
 
 /* Ajuste para telas menores */
